@@ -28,4 +28,4 @@ jobs:
 
       - name: publish
         run: |
-          docker push ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:standard -f ./standard/Dockerfile
+          docker push ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:standard
