@@ -1,4 +1,4 @@
-name: Publish image to ghcr.io (gpu image)
+name: Build standard image
 
 on:
   [push, workflow_dispatch]

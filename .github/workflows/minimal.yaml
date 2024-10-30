@@ -1,4 +1,4 @@
-name: Publish image to ghcr.io (gpu image)
+name: Build minimal image
 
 on:
   [push, workflow_dispatch]
