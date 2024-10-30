@@ -1,4 +1,4 @@
-![Github All Releases](https://img.shields.io/github/downloads/mjsully/docekr-glances/total)
+![Github All Releases](https://img.shields.io/github/downloads/mjsully/docker-glances/total)
 
 # Glances in a Docker container
 This container packages the popular system monitoring tool [Glances](https://glances.readthedocs.io/en/latest/index.html) into an Alpine container. This allows easy deployment of a system monitoring tool with a nice web UI, stats logging and Home Assistant integration with a simple docker compose deployment.
