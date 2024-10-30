@@ -38,5 +38,5 @@ jobs:
         with:
           context: ./gpu/
           push: true
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-gpu
+          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:gpu
           platforms: linux/arm64, linux/amd64

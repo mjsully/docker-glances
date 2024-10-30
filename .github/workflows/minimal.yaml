@@ -38,5 +38,5 @@ jobs:
         with:
           context: ./minimal/
           push: true
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-minimal
+          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:minimal
           platforms: linux/arm64, linux/amd64

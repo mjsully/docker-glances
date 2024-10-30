@@ -38,5 +38,5 @@ jobs:
         with:
           context: ./standard/
           push: true
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-standard
+          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:standard
           platforms: linux/arm64, linux/amd64
