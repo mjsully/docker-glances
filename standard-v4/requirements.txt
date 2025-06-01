@@ -1,0 +1,2 @@
+prometheus_client
+glances[containers,graph,ip,web]

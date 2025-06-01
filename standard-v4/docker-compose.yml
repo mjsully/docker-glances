@@ -1,0 +1,22 @@
+services:
+  glances:
+    image: docker-glances:v4
+    ports:
+      - 61208:61208
+    container_name: glances
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    restart: "unless-stopped"
+    pid: host
+    command: "glances -w"
+  glances-exporter:
+    image: docker-glances:v4
+    ports:
+      - 9091:9091
+    container_name: glances-exporter
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    restart: "unless-stopped"
+    pid: host
+    command: "glances --export prometheus -C /etc/glances.conf --quiet"
+
